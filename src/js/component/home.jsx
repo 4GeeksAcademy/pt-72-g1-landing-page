@@ -1,27 +1,19 @@
 import React from "react";
-
+import Jumbotron from "./Jumbotron";
 import Cards from "./Cards"
 
 import { Navbar } from "./nav";
 import { Footer } from "./footer";
 
 
-//include images into your bundle
-
-
 //create your first component
 const Home = () => {
 	return (
-		<div>
-
+		<div className="text-center">
+	    <Navbar />
+			<Jumbotron title={"Welcome to React!"} btnText={"Call to action!"}/>
 			<Cards img={rigoImage} />
-
-		<Navbar />
-		<Footer />
-
-		</div>
-		
+		  <Footer />
+		<div>
 	);
 };
-
-export default Home;
