@@ -1,6 +1,10 @@
 import React from "react";
+
+import Cards from "./Cards"
+
 import { Navbar } from "./nav";
 import { Footer } from "./footer";
+
 
 //include images into your bundle
 
@@ -9,9 +13,14 @@ import { Footer } from "./footer";
 const Home = () => {
 	return (
 		<div>
+
+			<Cards img={rigoImage} />
+
 		<Navbar />
 		<Footer />
+
 		</div>
+		
 	);
 };
 
